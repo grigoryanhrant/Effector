@@ -631,7 +631,7 @@ const messages = useList(model.$messages, {
     <div className="message-item" key={message.timestamp}>
       <h3>From: {message.author.name}</h3>
       <p>{message.text}</p>
-      <button onClick={() => handleMessageDelete(message)} disabled={messageDeleting}>
+      <button onClick={() => onMessageDelete(message)} disabled={messageDeleting}>
         {messageDeleting ? "Deleting" : "Delete"}
       </button>
     </div>
